@@ -56,6 +56,9 @@ AnnotationRegistry::registerLoader(function($class) use ($loader) {
 AnnotationRegistry::registerFile(
     __DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php'
 );
+AnnotationRegistry::registerFile(
+    __DIR__.'/../vendor/doctrine-mongodb-odm/lib/Doctrine/ODM/MongoDB/Mapping/Annotations/DoctrineAnnotations.php'
+);
 
 // Swiftmailer needs a special autoloader to allow
 // the lazy loading of the init file (which is expensive)
