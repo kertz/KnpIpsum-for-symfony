@@ -19,10 +19,12 @@ doctrine_mongodb:
             server: mongodb://localhost:27017
             options:
                 connect: true
-    default_database: ipsum_dev
+    default_database: ipsum_prod
     document_managers:
         default:
             auto_mapping: true
+            mappings:
+                StofDoctrineExtensionsBundle: false
 
 # Swiftmailer Configuration
 swiftmailer:

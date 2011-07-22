@@ -59,6 +59,8 @@ doctrine_mongodb:
     document_managers:
         default:
             auto_mapping: true
+            mappings:
+                StofDoctrineExtensionsBundle: false
 
 # Swiftmailer Configuration
 swiftmailer:
